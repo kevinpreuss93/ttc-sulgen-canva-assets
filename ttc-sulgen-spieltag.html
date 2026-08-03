@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --green:#2E9A1E; --green-deep:#1B6712; --green-light:#7DD068;
+    --ink:#111214; --graphite:#1E2126; --bone:#F6F3EA;
+    --font-display:'Bebas Neue', Impact, sans-serif;
+  }
+  *{ margin:0; padding:0; box-sizing:border-box; }
+  html,body{ width:1080px; height:1080px; background:#000; }
+  body{ font-family:'Inter', sans-serif; -webkit-font-smoothing:antialiased; }
+  .post{ position:relative; width:1080px; height:1080px; overflow:hidden;
+    display:grid; grid-template-columns: 460px 1fr; color:#fff; background:#111214; }
+
+  /* --- LEFT COLUMN --- */
+  .left{
+    position:relative; overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(17,18,20,.4) 0%, rgba(17,18,20,.9) 100%),
+      url('https://raw.githubusercontent.com/kevinpreuss93/ttc-sulgen-canva-assets/main/ttc-sulgen-hall.png') center/cover no-repeat;
+  }
+  .left .logo{ position:absolute; top:40px; left:40px; right:40px; }
+  .left .logo img{ height:100px; width:auto; display:block; filter: drop-shadow(0 2px 8px rgba(0,0,0,.4)); }
+  .left .st-num{ position:absolute; bottom:70px; left:40px; right:40px; }
+  .left .st-num .kicker{ font-family:'Inter'; font-size:13px; font-weight:700; letter-spacing:5px; color:var(--green-light); text-transform:uppercase; }
+  .left .st-num .num{ font-family:var(--font-display); font-size:300px; line-height:.85; color:#fff; letter-spacing:2px; margin-top:12px; }
+  .left .st-num .num sub{ font-family:'Inter'; font-size:20px; font-weight:700; letter-spacing:5px; color:var(--green-light); vertical-align:28px; margin-left:12px; text-transform:uppercase; }
+
+  /* --- RIGHT COLUMN --- */
+  .right{ padding:46px 42px 36px 42px; display:flex; flex-direction:column; overflow:hidden; }
+  .right .eyebrow{ font-family:'Inter'; font-size:12px; font-weight:700; letter-spacing:5px; color:var(--green-light); text-transform:uppercase; }
+  .right h1{ margin-top:12px; font-family:var(--font-display); font-size:120px; line-height:.82; letter-spacing:2px; }
+  .right h1 span{ color:var(--green); }
+  .right .subtitle{ margin-top:14px; font-family:'Inter'; font-weight:700; font-size:16px; letter-spacing:3px; color:#c8c8c8; text-transform:uppercase; }
+
+  .day-block{ margin-top:22px; }
+  .day-block .day-head{
+    display:flex; align-items:center; gap:12px;
+    font-family:'Inter'; font-size:12px; font-weight:800; letter-spacing:4px; text-transform:uppercase;
+    color:#fff; padding:6px 12px; background:var(--green); border-radius:2px; align-self:flex-start; width:fit-content;
+  }
+  .day-block .day-head.away{ background:transparent; color:var(--green-light); border:1.5px solid var(--green); }
+  .day-block .day-head .badge{ font-weight:600; opacity:.9; letter-spacing:3px; }
+
+  .match{ margin-top:12px; padding: 10px 0 10px 14px; border-left:3px solid var(--green); }
+  .match.away{ border-left-color:#666; }
+  .match .league{ font-family:'Inter'; font-size:10px; font-weight:700; letter-spacing:4px; color:var(--green-light); text-transform:uppercase; }
+  .match.away .league{ color:#9a9a9a; }
+  .match .pair{ margin-top:4px; font-family:var(--font-display); font-size:28px; line-height:1.02; letter-spacing:1px; }
+  .match .pair b{ color:#fff; }
+  .match .pair .vs{ color:var(--green); margin:0 6px; opacity:.9; font-size:22px; }
+  .match .meta{ margin-top:5px; display:flex; flex-wrap:wrap; gap:12px; font-family:'Inter'; font-size:12px; font-weight:600; color:#c8c8c8; }
+  .match .meta .time{ color:#fff; font-weight:800; letter-spacing:1px; }
+  .match .meta .dot{ opacity:.35; }
+
+  .footer{ margin-top:auto; padding-top:14px; border-top:1px solid rgba(255,255,255,.1);
+    display:flex; justify-content:space-between; font-family:'Inter'; font-size:11px; font-weight:700; letter-spacing:3px; color:#7a7a7a; text-transform:uppercase; }
+</style></head>
+<body data-document-role="page" data-label="Spieltag 12">
+<div class="post">
+  <div class="left">
+    <div class="logo"><img src="https://raw.githubusercontent.com/kevinpreuss93/ttc-sulgen-canva-assets/main/ttc-sulgen-logo.png" alt="TTC Sulgen"></div>
+    <div class="st-num">
+      <div class="kicker">Saison 25/26</div>
+      <div class="num">12<sub>Spieltag</sub></div>
+    </div>
+  </div>
+
+  <div class="right">
+    <div class="eyebrow">Alle Mannschaften</div>
+    <h1>SPIEL<span>TAG</span></h1>
+    <div class="subtitle">Freitag · 17.10.2025</div>
+
+    
+    <div class="day-block">
+      <div class="day-head away">
+        <span>Freitag · 17.10.2025</span>
+        <span class="badge">· AUSWÄRTS</span>
+      </div>
+      
+      <div class="match away">
+        <div class="league">Kreisliga A Gr. 2</div>
+        <div class="pair"><b>TTC Sulgen III</b><span class="vs"> vs </span>TV Nendingen II</div>
+        <div class="meta">
+          <span class="time">19:45 Uhr</span>
+          <span class="dot">·</span>
+          <span></span>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="day-block">
+      <div class="day-head away">
+        <span>Samstag · 18.10.2025</span>
+        <span class="badge">· AUSWÄRTS</span>
+      </div>
+      
+      <div class="match away">
+        <div class="league">Landesklasse Gr. 5</div>
+        <div class="pair"><b>TTC Sulgen</b><span class="vs"> vs </span>TSV Nagold</div>
+        <div class="meta">
+          <span class="time">15:30 Uhr</span>
+          <span class="dot">·</span>
+          <span></span>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="day-block">
+      <div class="day-head ">
+        <span>Samstag · 18.10.2025</span>
+        <span class="badge">· HEIM</span>
+      </div>
+      
+      <div class="match ">
+        <div class="league">Kreisliga B Gr. 3</div>
+        <div class="pair"><b>TTC Sulgen IV</b><span class="vs"> vs </span>TV Hardt III</div>
+        <div class="meta">
+          <span class="time">15:30 Uhr</span>
+          <span class="dot">·</span>
+          <span></span>
+        </div>
+      </div>
+      
+      <div class="match ">
+        <div class="league">Bezirksklasse</div>
+        <div class="pair"><b>TTC Sulgen II</b><span class="vs"> vs </span>TTC Fluorn-Winzeln</div>
+        <div class="meta">
+          <span class="time">20:00 Uhr</span>
+          <span class="dot">·</span>
+          <span></span>
+        </div>
+      </div>
+      
+    </div>
+    
+
+    <div class="footer">
+      <span>Kommt vorbei</span>
+      <span>ttc-sulgen.de</span>
+    </div>
+  </div>
+</div>
+</body></html>
